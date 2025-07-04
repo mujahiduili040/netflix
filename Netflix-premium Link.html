@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="icon" href="https://assets.nflxext.com/us/layout/ecweb/common/icons/nficon2016.ico" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+    }
+
+    .background {
+      background: url("https://assets.nflxext.com/ffe/siteui/vlv3/3f80febe-f1ed-41cb-b860-8003cb9e630c/510e423e-1f30-4b5b-a39f-5f843ac5c7a5/BD-en-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 50px 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      background: #333;
+      color: white;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #e50914;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f6121d;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #00ff99;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 30px;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 500px) {
+      .overlay {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="overlay">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix" />
+      </div>
+      <h1>Get Netflix Premium Free for 1 Year</h1>
+      <input type="email" placeholder="Enter your email" required />
+      <input type="password" placeholder="Create a password" required />
+      <select>
+        <option value="">Choose Your Plan</option>
+        <option value="basic">Basic – 1 Screen</option>
+        <option value="standard">Standard – 2 Screens</option>
+        <option value="premium">Premium – 4 Screens + Ultra HD</option>
+      </select>
+      <button onclick="generateAccess()">Activate Membership</button>
+      <div class="status" id="status"></div>
+      <div class="footer">
+        *This page is not affiliated with Netflix Inc. For promotional purposes only.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function generateAccess() {
+      document.getElementById("status").innerHTML = "Generating secure access key...";
+      setTimeout(() => {
+        document.getElementById("status").innerHTML = "Verifying subscription status...";
+      }, 2000);
+      setTimeout(() => {
+        document.getElementById("status").innerHTML = "Redirecting to secure activation page...";
+      }, 4000);
+      setTimeout(() => {
+        // ⛔ Replace with your actual Adsterra direct link below
+        window.location.href = "https://www.profitableratecpm.com/itzdtisw0f?key=44591e685fa0857c67614c9b57ca7a00";
+      }, 6000);
+    }
+  </script>
+</body>
+</html>
+
